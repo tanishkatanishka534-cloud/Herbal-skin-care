@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Herbal Skin Care — Natural Beauty, Rooted in Nature</title>
+    <meta name="description"
+        content="Herbal Skin Care offers 100% natural, plant-based skincare products. Serums, moisturizers, cleansers & more — crafted from organic botanicals for radiant, healthy skin." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Nunito+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-leaf">🌿</span>
+                <span class="logo-text">Herbal<span class="logo-accent"> Skin Care</span></span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#products" class="nav-link">Shop</a></li>
+                <li><a href="#ingredients" class="nav-link">Ingredients</a></li>
+                <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="nav-btn search-toggle" id="searchToggle" aria-label="Search">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8" />
+                        <path d="m21 21-4.3-4.3" />
+                    </svg>
+                </button>
+                <button class="nav-btn cart-btn" id="cartBtn" aria-label="Shopping cart">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" />
+                        <line x1="3" y1="6" x2="21" y2="6" />
+                        <path d="M16 10a4 4 0 0 1-8 0" />
+                    </svg>
+                    <span class="cart-count" id="cartCount">0</span>
+                </button>
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+        <!-- Search bar -->
+        <div class="search-overlay" id="searchOverlay">
+            <div class="search-container">
+                <input type="text" class="search-input" id="searchInput" placeholder="Search serums, creams, oils..." />
+                <button class="search-close" id="searchClose" aria-label="Close search">&times;</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="home">
+        <div class="hero-bg-elements">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+            <div class="floating-leaf leaf-1">🍃</div>
+            <div class="floating-leaf leaf-2">🌱</div>
+            <div class="floating-leaf leaf-3">🍃</div>
+        </div>
+        <div class="hero-inner">
+            <div class="hero-content reveal">
+                <span class="hero-badge">🌿 100% Natural & Organic</span>
+                <h1 class="hero-title">
+                    Glow With the <span class="highlight">Power of Nature</span>
+                </h1>
+                <p class="hero-subtitle">Unlock your skin's natural radiance with our handcrafted botanical
+                    formulations. Pure ingredients, visible results, zero compromises.</p>
+                <div class="hero-cta">
+                    <a href="#products" class="btn btn-primary">Shop Now</a>
+                    <a href="#about" class="btn btn-outline">Our Story</a>
+                </div>
+                <div class="hero-trust">
+                    <div class="trust-item">
+                        <span class="trust-icon">🧪</span>
+                        <span>Dermatologist Tested</span>
+                    </div>
+                    <div class="trust-item">
+                        <span class="trust-icon">🐰</span>
+                        <span>Cruelty Free</span>
+                    </div>
+                    <div class="trust-item">
+                        <span class="trust-icon">♻️</span>
+                        <span>Eco Packaging</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual reveal">
+                <div class="hero-img-ring">
+                    <img src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=600&q=80"
+                        alt="Natural skincare serum with botanical ingredients" class="hero-img" />
+                    <div class="ring ring-1"></div>
+                    <div class="ring ring-2"></div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>Discover</span>
+            <div class="scroll-dot"></div>
+        </div>
+    </section>
+
+    <!-- ===== MARQUEE ===== -->
+    <div class="marquee-strip">
+        <div class="marquee-track">
+            <span>✦ Aloe Vera</span><span>✦ Tea Tree</span><span>✦ Turmeric</span>
+            <span>✦ Rose Water</span><span>✦ Vitamin C</span><span>✦ Hyaluronic Acid</span>
+            <span>✦ Jojoba Oil</span><span>✦ Green Tea</span>
+            <span>✦ Aloe Vera</span><span>✦ Tea Tree</span><span>✦ Turmeric</span>
+            <span>✦ Rose Water</span><span>✦ Vitamin C</span><span>✦ Hyaluronic Acid</span>
+            <span>✦ Jojoba Oil</span><span>✦ Green Tea</span>
+        </div>
+    </div>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-visual reveal">
+                    <div class="about-img-stack">
+                        <img src="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?w=500&q=80"
+                            alt="Herbal ingredients" class="about-img img-main" />
+                        <img src="https://images.unsplash.com/photo-1570194065650-d99fb4a38c54?w=400&q=80"
+                            alt="Skincare routine" class="about-img img-accent" />
+                        <div class="about-exp-badge">
+                            <span class="exp-number">12+</span>
+                            <span class="exp-text">Years of<br />Expertise</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-content reveal">
+                    <span class="section-tag">Our Philosophy</span>
+                    <h2 class="section-title">Nature's Best, For Your Skin</h2>
+                    <p class="about-text">At Herbal Skin Care, we believe beauty should be pure, sustainable, and
+                        effective. Every product is crafted from hand-selected botanicals, cold-pressed oils, and
+                        plant-based actives — never synthetic fillers.</p>
+                    <p class="about-text">Our formulations are developed in partnership with dermatologists and
+                        herbalists to ensure clinical effectiveness with a gentle, natural touch.</p>
+                    <div class="about-stats">
+                        <div class="about-stat">
+                            <span class="about-stat-num" data-target="150">0</span><span class="stat-plus">+</span>
+                            <span class="about-stat-label">Products</span>
+                        </div>
+                        <div class="about-stat">
+                            <span class="about-stat-num" data-target="80">0</span><span class="stat-plus">K+</span>
+                            <span class="about-stat-label">Happy Customers</span>
+                        </div>
+                        <div class="about-stat">
+                            <span class="about-stat-num" data-target="35">0</span><span class="stat-plus">+</span>
+                            <span class="about-stat-label">Natural Ingredients</span>
+                        </div>
+                    </div>
+                    <a href="#products" class="btn btn-primary">Explore Products</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CATEGORIES ===== -->
+    <section class="categories" id="categories">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Skin Solutions</span>
+                <h2 class="section-title">Shop By Category</h2>
+                <p class="section-subtitle">Find the right skincare ritual for your unique needs</p>
+            </div>
+            <div class="category-grid">
+                <div class="cat-card reveal" data-cat="cleanser">
+                    <div class="cat-icon">🧴</div>
+                    <h3>Cleansers</h3>
+                    <p>Gentle, deep-clean formulas</p>
+                    <span class="cat-count">18 products</span>
+                </div>
+                <div class="cat-card reveal" data-cat="serum">
+                    <div class="cat-icon">💧</div>
+                    <h3>Serums</h3>
+                    <p>Concentrated skin boosters</p>
+                    <span class="cat-count">24 products</span>
+                </div>
+                <div class="cat-card reveal" data-cat="moisturizer">
+                    <div class="cat-icon">🫧</div>
+                    <h3>Moisturizers</h3>
+                    <p>Hydration & nourishment</p>
+                    <span class="cat-count">20 products</span>
+                </div>
+                <div class="cat-card reveal" data-cat="mask">
+                    <div class="cat-icon">🧖</div>
+                    <h3>Face Masks</h3>
+                    <p>Weekly skin treatments</p>
+                    <span class="cat-count">12 products</span>
+                </div>
+                <div class="cat-card reveal" data-cat="oil">
+                    <div class="cat-icon">🌻</div>
+                    <h3>Face Oils</h3>
+                    <p>Cold-pressed botanicals</p>
+                    <span class="cat-count">15 products</span>
+                </div>
+                <div class="cat-card reveal" data-cat="sunscreen">
+                    <div class="cat-icon">☀️</div>
+                    <h3>Sunscreens</h3>
+                    <p>Natural UV protection</p>
+                    <span class="cat-count">10 products</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PRODUCTS ===== -->
+    <section class="products" id="products">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Best Sellers</span>
+                <h2 class="section-title">Featured Products</h2>
+                <p class="section-subtitle">Our most loved natural skincare essentials</p>
+            </div>
+            <div class="product-filters reveal">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="serum">Serums</button>
+                <button class="filter-btn" data-filter="moisturizer">Moisturizers</button>
+                <button class="filter-btn" data-filter="cleanser">Cleansers</button>
+                <button class="filter-btn" data-filter="mask">Masks</button>
+                <button class="filter-btn" data-filter="oil">Oils</button>
+            </div>
+            <div class="product-grid" id="productGrid">
+
+                <!-- Product 1 -->
+                <div class="product-card reveal" data-category="serum" id="prod-1">
+                    <div class="product-badge">Bestseller</div>
+                    <button class="product-wishlist" aria-label="Add to wishlist">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path
+                                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                        </svg>
+                    </button>
+                    <div class="product-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=400&q=80"
+                            alt="Vitamin C Glow Serum" />
+                    </div>
+                    <div class="product-info">
+                        <span class="product-tag">Serum</span>
+                        <h3 class="product-name">Vitamin C Glow Serum</h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-count">(234)</span>
+                        </div>
+                        <div class="product-price-row">
+                            <span class="product-price">$38.00</span>
+                            <span class="product-price-old">$52.00</span>
+                        </div>
+                        <button class="btn btn-add-cart" data-id="1" data-name="Vitamin C Glow Serum" data-price="38.00"
+                            data-img="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=400&q=80">Add to
+                            Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card reveal" data-category="moisturizer" id="prod-2">
+                    <div class="product-badge new">New</div>
+                    <button class="product-wishlist" aria-label="Add to wishlist">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path
+                                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                        </svg>
+                    </button>
+                    <div class="product-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?w=400&q=80"
+                            alt="Aloe Hydra Moisturizer" />
+                    </div>
+                    <div class="product-info">
+                        <span class="product-tag">Moisturizer</span>
+                        <h3 class="product-name">Aloe Hydra Moisturizer</h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-count">(189)</span>
+                        </div>
+                        <div class="product-price-row">
+                            <span class="product-price">$42.00</span>
+                        </div>
+                        <button class="btn btn-add-cart" data-id="2" data-name="Aloe Hydra Moisturizer"
+                            data-price="42.00"
+                            data-img="https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?w=400&q=80">Add to
+                            Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card reveal" data-category="cleanser" id="prod-3">
+                    <button class="product-wishlist" aria-label="Add to wishlist">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path
+                                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                        </svg>
+                    </button>
+                    <div class="product-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=400&q=80"
+                            alt="Tea Tree Purifying Cleanser" />
+                    </div>
+                    <div class="product-info">
+                        <span class="product-tag">Cleanser</span>
+                        <h3 class="product-name">Tea Tree Purifying Cleanser</h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="rating-count">(156)</span>
+                        </div>
+                        <div class="product-price-row">
+                            <span class="product-price">$28.00</span>
+                            <span class="product-price-old">$36.00</span>
+                        </div>
+                        <button class="btn btn-add-cart" data-id="3" data-name="Tea Tree Purifying Cleanser"
+                            data-price="28.00"
+                            data-img="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=400&q=80">Add to
+                            Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card reveal" data-category="mask" id="prod-4">
+                    <button class="product-wishlist" aria-label="Add to wishlist">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path
+                                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                        </svg>
+                    </button>
+                    <div class="product-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1596755389378-c31d21fd1273?w=400&q=80"
+                            alt="Turmeric Glow Face Mask" />
+                    </div>
+                    <div class="product-info">
+                        <span class="product-tag">Mask</span>
+                        <h3 class="product-name">Turmeric Glow Face Mask</h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-count">(112)</span>
+                        </div>
+                        <div class="product-price-row">
+                            <span class="product-price">$32.00</span>
+                        </div>
+                        <button class="btn btn-add-cart" data-id="4" data-name="Turmeric Glow Face Mask"
+                            data-price="32.00"
+                            data-img="https://images.unsplash.com/photo-1596755389378-c31d21fd1273?w=400&q=80">Add to
+                            Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card reveal" data-category="oil" id="prod-5">
+                    <div class="product-badge">Bestseller</div>
+                    <button class="product-wishlist" aria-label="Add to wishlist">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path
+                                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                        </svg>
+                    </button>
+                    <div class="product-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=400&q=80"
+                            alt="Rosehip Radiance Oil" />
+                    </div>
+                    <div class="product-info">
+                        <span class="product-tag">Oil</span>
+                        <h3 class="product-name">Rosehip Radiance Oil</h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-count">(198)</span>
+                        </div>
+                        <div class="product-price-row">
+                            <span class="product-price">$36.00</span>
+                            <span class="product-price-old">$48.00</span>
+                        </div>
+                        <button class="btn btn-add-cart" data-id="5" data-name="Rosehip Radiance Oil" data-price="36.00"
+                            data-img="https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=400&q=80">Add to
+                            Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card reveal" data-category="serum" id="prod-6">
+                    <div class="product-badge new">New</div>
+                    <button class="product-wishlist" aria-label="Add to wishlist">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path
+                                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                        </svg>
+                    </button>
+                    <div class="product-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1570194065650-d99fb4a38c54?w=400&q=80"
+                            alt="Hyaluronic Acid Hydra Serum" />
+                    </div>
+                    <div class="product-info">
+                        <span class="product-tag">Serum</span>
+                        <h3 class="product-name">Hyaluronic Hydra Serum</h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-count">(167)</span>
+                        </div>
+                        <div class="product-price-row">
+                            <span class="product-price">$44.00</span>
+                        </div>
+                        <button class="btn btn-add-cart" data-id="6" data-name="Hyaluronic Hydra Serum"
+                            data-price="44.00"
+                            data-img="https://images.unsplash.com/photo-1570194065650-d99fb4a38c54?w=400&q=80">Add to
+                            Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 7 -->
+                <div class="product-card reveal" data-category="moisturizer" id="prod-7">
+                    <button class="product-wishlist" aria-label="Add to wishlist">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path
+                                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                        </svg>
+                    </button>
+                    <div class="product-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?w=400&q=80"
+                            alt="Avocado Nourish Cream" />
+                    </div>
+                    <div class="product-info">
+                        <span class="product-tag">Moisturizer</span>
+                        <h3 class="product-name">Avocado Nourish Cream</h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="rating-count">(98)</span>
+                        </div>
+                        <div class="product-price-row">
+                            <span class="product-price">$34.00</span>
+                        </div>
+                        <button class="btn btn-add-cart" data-id="7" data-name="Avocado Nourish Cream"
+                            data-price="34.00"
+                            data-img="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?w=400&q=80">Add to
+                            Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 8 -->
+                <div class="product-card reveal" data-category="cleanser" id="prod-8">
+                    <button class="product-wishlist" aria-label="Add to wishlist">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path
+                                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                        </svg>
+                    </button>
+                    <div class="product-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=400&q=80"
+                            alt="Rose Water Gentle Toner" />
+                    </div>
+                    <div class="product-info">
+                        <span class="product-tag">Cleanser</span>
+                        <h3 class="product-name">Rose Water Gentle Toner</h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-count">(143)</span>
+                        </div>
+                        <div class="product-price-row">
+                            <span class="product-price">$24.00</span>
+                            <span class="product-price-old">$32.00</span>
+                        </div>
+                        <button class="btn btn-add-cart" data-id="8" data-name="Rose Water Gentle Toner"
+                            data-price="24.00"
+                            data-img="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=400&q=80">Add to
+                            Cart</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== INGREDIENTS BANNER ===== -->
+    <section class="ingredients-section" id="ingredients">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">What Goes In</span>
+                <h2 class="section-title">Powered By Nature's Finest</h2>
+                <p class="section-subtitle">We only use ingredients you can trust — pure, organic, and ethically sourced
+                </p>
+            </div>
+            <div class="ingredients-grid">
+                <div class="ingredient-card reveal">
+                    <div class="ingredient-icon">🌿</div>
+                    <h3>Aloe Vera</h3>
+                    <p>Deep hydration and soothing anti-inflammatory properties for all skin types.</p>
+                </div>
+                <div class="ingredient-card reveal">
+                    <div class="ingredient-icon">🍋</div>
+                    <h3>Vitamin C</h3>
+                    <p>Brightens skin tone, reduces dark spots, and boosts collagen production.</p>
+                </div>
+                <div class="ingredient-card reveal">
+                    <div class="ingredient-icon">🌹</div>
+                    <h3>Rose Extract</h3>
+                    <p>Natural toning, anti-aging benefits with a calming floral essence.</p>
+                </div>
+                <div class="ingredient-card reveal">
+                    <div class="ingredient-icon">🫖</div>
+                    <h3>Green Tea</h3>
+                    <p>Powerful antioxidant that fights free radicals and reduces inflammation.</p>
+                </div>
+                <div class="ingredient-card reveal">
+                    <div class="ingredient-icon">🥑</div>
+                    <h3>Jojoba Oil</h3>
+                    <p>Mimics skin's natural oils, providing balanced moisture without clogging pores.</p>
+                </div>
+                <div class="ingredient-card reveal">
+                    <div class="ingredient-icon">💧</div>
+                    <h3>Hyaluronic Acid</h3>
+                    <p>Holds 1000x its weight in water for plump, dewy, youthful-looking skin.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PROMO BANNER ===== -->
+    <section class="promo-banner reveal">
+        <div class="container promo-inner">
+            <div class="promo-content">
+                <span class="promo-label">Limited Offer</span>
+                <h2 class="promo-title">Get Your Free Skincare Kit</h2>
+                <p class="promo-text">Spend $75 or more and receive a complimentary 3-piece travel kit featuring our
+                    bestselling Vitamin C Serum, Aloe Moisturizer, and Rose Toner.</p>
+                <a href="#products" class="btn btn-primary">Shop & Claim</a>
+            </div>
+            <div class="promo-visual">
+                <img src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=500&q=80"
+                    alt="Free skincare kit offer" />
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ROUTINE STEPS ===== -->
+    <section class="routine">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Your Daily Ritual</span>
+                <h2 class="section-title">Simple 4-Step Skincare Routine</h2>
+            </div>
+            <div class="routine-grid">
+                <div class="routine-step reveal">
+                    <div class="step-num">01</div>
+                    <div class="step-icon">🧴</div>
+                    <h3>Cleanse</h3>
+                    <p>Start with our gentle botanical cleanser to remove impurities without stripping moisture.</p>
+                </div>
+                <div class="routine-step reveal">
+                    <div class="step-num">02</div>
+                    <div class="step-icon">💧</div>
+                    <h3>Tone</h3>
+                    <p>Balance your skin's pH and prep for absorption with our rose water toner.</p>
+                </div>
+                <div class="routine-step reveal">
+                    <div class="step-num">03</div>
+                    <div class="step-icon">✨</div>
+                    <h3>Treat</h3>
+                    <p>Apply targeted serums and oils to address your specific skin concerns.</p>
+                </div>
+                <div class="routine-step reveal">
+                    <div class="step-num">04</div>
+                    <div class="step-icon">🫧</div>
+                    <h3>Moisturize</h3>
+                    <p>Lock in all the goodness with a rich, plant-based moisturizer for lasting hydration.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS ===== -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Real Results</span>
+                <h2 class="section-title">What Our Customers Say</h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card reveal">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"I've struggled with dry skin for years. The Aloe Hydra Moisturizer
+                        completely transformed my skin in just 2 weeks. It's so soft and glowing now!"</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar" style="background:linear-gradient(135deg,#a8d5a2,#4a9c6f)">PK
+                        </div>
+                        <div>
+                            <strong>Priya Kumar</strong>
+                            <span>Verified Buyer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card reveal">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"The Vitamin C Serum is pure magic. My dark spots faded noticeably in a
+                        month. I love that everything is natural and cruelty-free. Best skincare brand!"</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar" style="background:linear-gradient(135deg,#c4b5a0,#8b7355)">EM
+                        </div>
+                        <div>
+                            <strong>Emily Martinez</strong>
+                            <span>Verified Buyer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card reveal">
+                    <div class="testimonial-stars">★★★★☆</div>
+                    <p class="testimonial-text">"Finally found skincare that doesn't irritate my sensitive skin. The Tea
+                        Tree Cleanser is gentle yet effective. My acne has cleared up significantly!"</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar" style="background:linear-gradient(135deg,#b5cda3,#6a9f5c)">JW
+                        </div>
+                        <div>
+                            <strong>James Wong</strong>
+                            <span>Verified Buyer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FEATURES ===== -->
+    <section class="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card reveal">
+                    <div class="feature-icon">🚚</div>
+                    <h3>Free Shipping</h3>
+                    <p>Complimentary delivery on orders over $50</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon">🌱</div>
+                    <h3>100% Natural</h3>
+                    <p>No parabens, sulfates, or synthetic fragrances</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon">🔄</div>
+                    <h3>30-Day Returns</h3>
+                    <p>Not satisfied? Full refund, no questions asked</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon">💬</div>
+                    <h3>Skin Experts</h3>
+                    <p>Free consultations with certified dermatologists</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== NEWSLETTER ===== -->
+    <section class="newsletter" id="contact">
+        <div class="container">
+            <div class="newsletter-card reveal">
+                <div class="newsletter-content">
+                    <span class="section-tag">Stay Beautiful</span>
+                    <h2 class="section-title">Join the Herbal Family</h2>
+                    <p class="section-subtitle">Get exclusive skincare tips, early access to new launches, and 15% off
+                        your first order.</p>
+                </div>
+                <form class="newsletter-form" id="newsletterForm">
+                    <div class="form-group">
+                        <input type="email" id="emailInput" placeholder="Your email address" required />
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </div>
+                    <p class="form-note">🌿 Join 50,000+ skincare lovers. Unsubscribe anytime.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col footer-brand">
+                    <a href="#" class="logo">
+                        <span class="logo-leaf">🌿</span>
+                        <span class="logo-text">Herbal<span class="logo-accent"> Skin Care</span></span>
+                    </a>
+                    <p class="footer-desc">Pure botanical skincare handcrafted with love since 2014. Nature knows best —
+                        we just bottle it.</p>
+                    <div class="footer-socials">
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="YouTube">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path
+                                    d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.43z" />
+                                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Pinterest">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M8 12a4 4 0 1 1 8 0c0 4-3 6-3 6" />
+                                <line x1="12" y1="12" x2="12" y2="21" />
+                                <circle cx="12" cy="12" r="10" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Shop</h4>
+                    <ul>
+                        <li><a href="#">Serums</a></li>
+                        <li><a href="#">Moisturizers</a></li>
+                        <li><a href="#">Cleansers</a></li>
+                        <li><a href="#">Face Masks</a></li>
+                        <li><a href="#">Face Oils</a></li>
+                        <li><a href="#">Sunscreens</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Ingredients</a></li>
+                        <li><a href="#">Sustainability</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Skin Quiz</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Herbal Skin Care. All rights reserved.</p>
+                <div class="footer-payments">
+                    <span>Visa</span><span>Mastercard</span><span>PayPal</span><span>Apple Pay</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== CART DRAWER ===== -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <aside class="cart-drawer" id="cartDrawer">
+        <div class="cart-header">
+            <h3>🌿 Your Cart</h3>
+            <button class="cart-close" id="cartClose" aria-label="Close cart">&times;</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <div class="cart-empty" id="cartEmpty">
+                <span style="font-size:2.5rem;opacity:0.4">🧴</span>
+                <p>Your cart is empty</p>
+                <span>Explore our natural skincare collection!</span>
+            </div>
+        </div>
+        <div class="cart-footer" id="cartFooter" style="display:none">
+            <div class="cart-total">
+                <span>Total</span>
+                <span id="cartTotal">$0.00</span>
+            </div>
+            <button class="btn btn-primary btn-checkout">Checkout</button>
+            <p class="cart-note">Free shipping on orders over $50 🌱</p>
+        </div>
+    </aside>
+
+    <!-- ===== TOAST ===== -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- ===== BACK TO TOP ===== -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <polyline points="18 15 12 9 6 15" />
+        </svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
